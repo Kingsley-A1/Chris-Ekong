@@ -550,8 +550,20 @@
   box-sizing: border-box;
 }
 
+/* Remove tap highlight on mobile */
+button,
+a,
+input,
+textarea,
+select {
+  -webkit-tap-highlight-color: transparent;
+  -webkit-touch-callout: none;
+}
+
 html {
   scroll-behavior: smooth;
+  /* Prevent text size adjustment on orientation change */
+  -webkit-text-size-adjust: 100%;
 }
 
 @media (prefers-reduced-motion: reduce) {
@@ -576,6 +588,7 @@ body {
   font-size: var(--font-size-base);
   line-height: var(--line-height-base);
   -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
 
 body.nav-open {
@@ -1845,6 +1858,14 @@ h3 {
   padding-bottom: var(--space-2);
   scroll-snap-type: x mandatory;
   scrollbar-width: none;
+  -webkit-overflow-scrolling: touch;
+  scroll-behavior: smooth;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .case-highlights__track {
+    scroll-behavior: auto;
+  }
 }
 
 .case-highlights__track::-webkit-scrollbar {
@@ -1930,6 +1951,28 @@ h3 {
   box-shadow: var(--shadow-soft);
   cursor: pointer;
   position: relative;
+  transition: transform var(--transition-fast), box-shadow var(--transition-fast), border-color var(--transition-fast);
+}
+
+.slider-control:hover {
+  transform: scale(1.1);
+  box-shadow: var(--shadow-card);
+  border-color: rgba(10, 28, 60, 0.2);
+}
+
+.slider-control:active {
+  transform: scale(0.95);
+}
+
+.slider-control:focus-visible {
+  outline: 2px solid var(--color-accent);
+  outline-offset: 2px;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .slider-control:hover {
+    transform: none;
+  }
 }
 
 .slider-control::before {
