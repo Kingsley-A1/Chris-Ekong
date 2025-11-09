@@ -1024,16 +1024,16 @@ h3 {
 
 @media (max-width: 720px) {
   .brand {
-    gap: 0.65rem;
+    gap: 0.5rem;
   }
 
   .brand__mark {
-    width: 2.75rem;
-    height: 2.75rem;
+    width: 2.25rem;
+    height: 2.25rem;
   }
 
   .brand__text {
-    font-size: 0.9rem;
+    font-size: 0.8rem;
   }
 
   .brand__subtitle {
@@ -1041,13 +1041,27 @@ h3 {
   }
 
   .nav-trigger {
-    padding: 0.55rem 0.85rem;
-    font-size: 0.88rem;
+    padding: 0.45rem 0.65rem;
+    font-size: 0.8rem;
+    gap: 0.4rem;
+  }
+  
+  .nav-trigger__label {
+    display: none;
+  }
+  
+  .nav-trigger__icon {
+    width: 1rem;
   }
 
   .header-cta {
-    padding: 0.6rem 0.9rem;
-    font-size: 0.85rem;
+    padding: 0.45rem 0.7rem;
+    font-size: 0.75rem;
+    white-space: nowrap;
+  }
+  
+  .site-header__inner {
+    gap: 0.5rem;
   }
 }
 
@@ -1300,13 +1314,15 @@ h3 {
 
 @media (max-width: 599px) {
   .hero-home__actions {
-    flex-direction: column;
-    width: 100%;
+    flex-direction: row;
+    gap: 0.5rem;
   }
   
   .hero-home__actions .button {
-    width: 100%;
-    justify-content: center;
+    flex: 1;
+    padding: 0.7rem 0.9rem;
+    font-size: 0.85rem;
+    white-space: nowrap;
   }
 }
 
