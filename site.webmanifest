@@ -1,0 +1,21 @@
+{
+  "name": "Barr. Chris Ekong — Attorney at Law",
+  "short_name": "Barr. Chris",
+  "description": "Experienced attorney specialising in civil litigation and commercial law. Clear counsel, strategic advocacy, and client-first communication.",
+  "icons": [
+    {
+      "src": "/assets/Chris Ekong & Co. Attorneys and Arbitrators_logo.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any maskable"
+    }
+  ],
+  "theme_color": "#2563eb",
+  "background_color": "#ffffff",
+  "display": "standalone",
+  "start_url": "/",
+  "scope": "/",
+  "lang": "en",
+  "orientation": "portrait-primary",
+  "categories": ["business", "legal"]
+}
