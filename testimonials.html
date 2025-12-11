@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Client Reviews — Barr. Chris Ekong</title>
+  <meta name="description"
+    content="Read client testimonials, satisfaction ratings, and share feedback with Barr. Chris Ekong." />
+  <meta property="og:title" content="Client Reviews — Barr. Chris Ekong" />
+  <meta property="og:description"
+    content="Read client testimonials and satisfaction ratings from Barr. Chris Ekong's clients." />
+  <meta property="og:type" content="website" />
+  <meta property="og:image" content="assets/Chris_Ekong.png" />
+  <meta property="og:url" content="https://barrchriskong.com/testimonials.html" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Client Reviews — Barr. Chris Ekong" />
+  <meta name="twitter:description" content="Read client testimonials and satisfaction ratings." />
+  <meta name="twitter:image" content="assets/Chris_Ekong.png" />
+  <meta name="theme-color" content="#2563eb" />
+  <meta name="robots" content="index, follow" />
+  <link rel="canonical" href="https://barrchriskong.com/testimonials.html" />
+  <link rel="apple-touch-icon" href="assets/icons/icon-192.png" />
+  <link rel="manifest" href="site.webmanifest" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Source+Serif+Pro:wght@600&family=Sora:wght@600;700&display=swap"
+    rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" />
+  <link rel="icon" href="assets/firm-logo.png" />
+</head>
+
+<body>
+  <a href="#main" class="skip-to-main">Skip to main content</a>
+  <header class="site-header" data-header>
+    <div class="shell site-header__inner">
+      <a href="index.html" class="brand" aria-label="Home">
+        <span class="brand__mark">
+          <img src="assets/firm-logo.png" alt="Firm logo" height="40" />
+        </span>
+        <span class="brand__text">
+          <strong>Barr. Chris Ekong &amp; Co.</strong>
+          <span class="brand__subtitle">Attorneys &amp; Advocates</span>
+        </span>
+      </a>
+      <nav class="site-nav" aria-label="Primary">
+        <button class="nav-trigger" id="navToggle" aria-expanded="false" aria-controls="primaryNav" type="button">
+          <span class="nav-trigger__icon" aria-hidden="true"></span>
+          <span class="nav-trigger__label">Menu</span>
+        </button>
+        <ul class="nav-list" id="primaryNav" data-nav>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="index.html#value-prop">Services</a></li>
+          <li><a href="index.html#case-highlights">Results</a></li>
+          <li><a href="testimonials.html">Reviews</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+      <a class="button button-primary header-cta" href="contact.html">Book Consultation</a>
+    </div>
+  </header>
+
+  <main id="main" tabindex="-1">
+    <section class="hero hero-reviews" style="
+          --reviews-image: url('assets/lawyers-meeting.png');
+        ">
+      <div class="shell hero-reviews__grid">
+        <div class="hero-reviews__content">
+          <span class="hero-reviews__eyebrow">Client Impressions</span>
+          <h1>Stories that prove advocacy with integrity</h1>
+          <p>
+            Hear directly from individuals and organisations who trusted Barr.
+            Chris with their most significant legal matters. Share your own
+            experience with the assurance that privacy and professionalism
+            remain paramount.
+          </p>
+          <div class="hero-reviews__stats">
+            <div class="reviews-stat">
+              <span id="averageRating" aria-live="polite">5.0 ★</span>
+              <p>Average satisfaction across published testimonials.</p>
+            </div>
+            <div class="reviews-stat">
+              <span id="reviewCount" aria-live="polite">0 Reviews</span>
+              <p>Real feedback from corporate and individual clients.</p>
+            </div>
+          </div>
+          <div class="hero-reviews__actions">
+            <a class="button button-accent" href="#share-experience">Share Your Experience</a>
+            <a class="button button-ghost" href="contact.html">Request a Consultation</a>
+          </div>
+        </div>
+        <aside class="hero-reviews__trust" aria-label="Advocacy highlights">
+          <div class="trust-panel">
+            <h2>Confidence in representation</h2>
+            <ul>
+              <li>20+ years resolving civil and commercial disputes</li>
+              <li>Transparent communication at every milestone</li>
+              <li>Ethical advocacy centred on client outcomes</li>
+            </ul>
+            <a class="trust-panel__link" href="#filters">Browse testimonials</a>
+          </div>
+        </aside>
+      </div>
+    </section>
+
+    <section class="reviews-filters" id="filters">
+      <div class="shell reviews-filters__inner">
+        <h2 class="visually-hidden">Filter testimonials</h2>
+        <form class="reviews-filters__form" aria-label="Filter testimonials">
+          <label class="filter-field">
+            <span>Service</span>
+            <select id="filterService" name="service">
+              <option value="all">All</option>
+            </select>
+          </label>
+          <label class="filter-field">
+            <span>Rating</span>
+            <select id="filterRating" name="rating">
+              <option value="all">All</option>
+              <option value="5">5 ★</option>
+              <option value="4">4 ★ &amp; up</option>
+              <option value="3">3 ★ &amp; up</option>
+            </select>
+          </label>
+          <label class="filter-field">
+            <span>Sort</span>
+            <select id="sortOrder" name="sort">
+              <option value="newest">Most recent</option>
+              <option value="highest">Highest rated</option>
+              <option value="oldest">Oldest first</option>
+            </select>
+          </label>
+          <!-- <label class="filter-field filter-search">
+              <span class="visually-hidden">Search testimonials</span>
+              <input
+                id="searchKeyword"
+                type="search"
+                name="q"
+                placeholder="Search by keyword"
+              />
+            </label> -->
+        </form>
+        <div class="reviews-filters__summary" id="filterSummary" aria-live="polite"></div>
+      </div>
+    </section>
+
+    <section class="reviews-content" aria-labelledby="reviews-title">
+      <div class="shell reviews-layout">
+        <div class="reviews-main">
+          <div class="section-heading">
+            <h2 id="reviews-title">What clients are saying</h2>
+            <p>
+              These testimonials highlight the clarity, responsiveness, and
+              results delivered across diverse case types. Anonymous
+              submissions display without identifying details, ensuring
+              privacy for every contributor.
+            </p>
+          </div>
+          <div class="reviews-grid" id="reviewsGrid" aria-live="polite"></div>
+        </div>
+        <aside class="reviews-sidebar" aria-label="Trust anchors and stats">
+          <div class="trust-widget">
+            <h3>Google Rating</h3>
+            <p class="trust-widget__score">5.0 ★</p>
+            <p class="trust-widget__copy">Based on 200+ Google reviews.</p>
+            <a class="trust-widget__link" href="https://www.google.com/search?q=barr+chris+ekong+reviews"
+              target="_blank" rel="noopener noreferrer">View on Google</a>
+          </div>
+          <div class="trust-widget">
+            <h3>Professional Associations</h3>
+            <ul>
+              <li>Nigerian Bar Association</li>
+              <li>International Chamber of Commerce</li>
+              <li>Chartered Institute of Arbitrators</li>
+            </ul>
+          </div>
+          <div class="trust-widget">
+            <h3>Response Time</h3>
+            <p class="trust-widget__score">&lt; 24 hours</p>
+            <p class="trust-widget__copy">
+              Average time to acknowledge new inquiries.
+            </p>
+          </div>
+        </aside>
+      </div>
+    </section>
+
+    <section class="reviews-share" id="share-experience" aria-labelledby="share-title">
+      <div class="shell reviews-share__grid">
+        <div>
+          <h2 id="share-title">Share your experience</h2>
+          <p>
+            We appreciate honest reflections. Choose to display your name or
+            remain anonymous. Your feedback informs service improvements and
+            helps future clients make confident decisions.
+          </p>
+          <p class="reviews-share__note">
+            <strong>Privacy assurance:</strong> Leave the “Display my name”
+            option unchecked to publish your review as Anonymous. Only Barr.
+            Chris and authorised team members will see the submitted contact
+            details.
+          </p>
+        </div>
+        <form id="feedbackForm" class="reviews-form" novalidate>
+          <div class="form-row">
+            <label for="name">Full name</label>
+            <input type="text" id="name" name="name" placeholder="Jane Doe" autocomplete="name" />
+          </div>
+          <div class="form-row">
+            <label for="caseType">Type of matter <span aria-hidden="true">*</span></label>
+            <select id="caseType" name="caseType" required aria-required="true">
+              <option value="">Select case type</option>
+              <option value="Civil Litigation">Civil Litigation</option>
+              <option value="Commercial Law">Commercial Law</option>
+              <option value="Employment Law">Employment Law</option>
+              <option value="Family Law">Family Law</option>
+              <option value="Criminal Defense">Criminal Defense</option>
+              <option value="Alternative Dispute Resolution">Alternative Dispute Resolution</option>
+              <option value="Other">Other</option>
+            </select>
+          </div>
+          <div class="form-row form-row--split">
+            <div class="form-field">
+              <label for="rating">Rating (1–5) <span aria-hidden="true">*</span></label>
+              <select id="rating" name="rating" required aria-required="true">
+                <option value="5">5</option>
+                <option value="4">4</option>
+                <option value="3">3</option>
+                <option value="2">2</option>
+                <option value="1">1</option>
+              </select>
+            </div>
+            <div class="form-field">
+              <label class="checkbox-field" for="displayName">
+                <input type="checkbox" id="displayName" name="displayName" value="yes" />
+                <span>Display my name publicly</span>
+              </label>
+            </div>
+          </div>
+          <div class="form-row">
+            <label for="feedback">Your feedback <span aria-hidden="true">*</span></label>
+            <textarea id="feedback" name="feedback" rows="6" maxlength="2000"
+              placeholder="Share details about your experience..." required></textarea>
+          </div>
+          <div class="form-row form-row--actions">
+            <button type="submit" class="button button-accent">Submit Feedback</button>
+            <button type="button" id="clearFeedback" class="button button-outline">Clear Saved Reviews</button>
+          </div>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="grid grid-3">
+        <div>
+          <h3>About</h3>
+          <p>
+            Strategic legal counsel with a focus on client outcomes and
+            ethical practice.
+          </p>
+        </div>
+        <div>
+          <h3>Quick Links</h3>
+          <ul class="footer__links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="#share-experience">Leave a Review</a></li>
+          </ul>
+        </div>
+        <div>
+          <h3>Contact</h3>
+          <p>
+            Phone: <a href="tel:+2349036826272">+234 903 682 6272</a>
+          </p>
+          <p>
+            Email:
+            <a href="mailto:hello@barrchris.example">hello@barrchris.example</a>
+          </p>
+          <p class="footer__disclaimer">
+            Past results do not guarantee future outcomes.
+          </p>
+        </div>
+      </div>
+      <p class="footer__copyright">
+        © <span id="year"></span> Barr. Chris Ekong — All rights reserved.
+      </p>
+    </div>
+  </footer>
+
+  <script src="assets/js/main.js" defer></script>
+  <script src="assets/js/testimonials.js" defer></script>
+</body>
+
+</html>

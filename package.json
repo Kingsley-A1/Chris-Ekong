@@ -1,0 +1,12 @@
+{
+  "name": "barr-chris-portfolio-tools",
+  "version": "1.0.0",
+  "description": "Utility scripts for the Barr. Chris Ekong portfolio (contrast checks, dev helpers)",
+  "scripts": {
+    "contrast-check": "node tools/contrast-check.js",
+    "dev": "netlify dev"
+  },
+  "engines": {
+    "node": ">=14"
+  }
+}

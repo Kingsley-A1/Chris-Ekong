@@ -1,0 +1,10 @@
+# Barr. Chris Ekong Portfolio - robots.txt
+User-agent: *
+Allow: /
+
+# Sitemap location
+Sitemap: https://barrchriskong.com/sitemap.xml
+
+# Block utility pages from indexing
+Disallow: /thanks.html
+Disallow: /404.html
