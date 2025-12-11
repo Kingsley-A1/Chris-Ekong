@@ -55,7 +55,7 @@
           <li><a href="index.html#value-prop">Services</a></li>
           <li><a href="index.html#case-highlights">Results</a></li>
           <li><a href="testimonials.html">Reviews</a></li>
-          <li><a href="contact.html">Contact</a></li>
+          <li><a href="contact.html" class="is-active">Contact</a></li>
         </ul>
       </nav>
       <a class="button button-primary header-cta" href="contact.html">Book Consultation</a>
@@ -153,12 +153,11 @@
             Outline your matter and the team will respond with recommended
             next steps.
           </p>
-          <form class="contact-form" name="contact" method="POST" data-netlify="true" netlify-honeypot="bot-field"
-            action="/thanks.html">
-            <input type="hidden" name="form-name" value="contact" />
-            <p hidden>
-              <label>Don’t fill this out if you’re human: <input name="bot-field" /></label>
-            </p>
+          <form class="contact-form" name="contact" method="POST" action="https://api.web3forms.com/submit">
+            <input type="hidden" name="access_key" value="31ab8f7b-694e-4681-b57a-302ffa283c63" />
+            <input type="hidden" name="redirect" value="https://kingsley-a1.github.io/Chris-Ekong/thanks.html" />
+            <input type="hidden" name="subject" value="New Contact from Barr. Chris Ekong Website" />
+            <input type="checkbox" name="botcheck" class="hidden" style="display: none;" />
             <div class="form-row">
               <div class="form-field">
                 <label for="cname">Name</label>
